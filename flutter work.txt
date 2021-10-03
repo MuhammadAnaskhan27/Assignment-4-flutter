@@ -1,0 +1,184 @@
+                                            Answer Num #2
+
+void main() {
+   table(6,10);
+  }
+    void table(n,m){
+      var n=0;
+      for(n;n<=10;n++){
+        var m=n*10;
+        print("10 X $n = $m");
+
+
+      }
+    }
+ 
+
+                                           Answer Num #3
+
+void main(){
+    array(2);
+  }
+  void array(int n) {
+    var lst = [2, 4, 6, 7, 9];
+    for (var i = 0; i < lst.length ; i++) {
+      var b = (lst[i]/n);
+      print(b);
+    }
+  }
+
+                                       Answer Num #4
+
+
+void main()
+{
+
+
+List <String> names=["Sohaib","Ali","Samar","Maaz","Aqib"];
+List marks=[77,93,65,88,31];
+
+for(var x=0 ; x<marks.length; x++){
+marksheet(marks[x],names[x]);
+}
+
+}
+
+void marksheet(marks,names){
+
+
+  if(marks>=90){
+    print("$names got $marks marks = A+ grade");
+  }
+  else if(marks>=80){
+    print("$names got $marks marks = A grade");
+  }
+  else if(marks>=70){
+    print("$names got $marks marks = B grade");
+  }
+  else if (marks>=60){
+    print("$names got 4marks marks= C grade");
+
+  }
+  else{
+    print("you are failed");
+  }
+}
+
+                                                       Answer #5
+
+
+void main()
+{
+
+var Bio_data=Data();
+Bio_data.info();
+
+}
+
+class Data
+{
+  void info(){
+    dynamic name="M.Anas Khan";
+    int age=21;
+    var courses_list=["ICS","Calculus","Physics"];
+    print("My Bio Data :-");
+    print("Name:-$name");
+    print("Age:- $age");
+    print("Courses:-$courses_list");
+  }
+}
+
+                                                       Answer #6
+
+
+void main()
+{
+
+var YourName=Name();
+print("My Name Is ${YourName.name}");
+
+}
+
+class Name
+{
+  dynamic name="M.Anas khan";
+
+
+}
+
+
+                                                     Answer #7
+
+
+void main()
+{
+var My_data=BioData("Anaskhan",21,"BSCS");
+print("${My_data.Name} ${My_data.Age} ${My_data.Education}");
+
+}
+
+class BioData
+{
+
+  late var Name;
+  late int Age;
+  late String Education;
+
+
+  BioData(var Name ,int Age , String Education ){
+
+    this.Name=Name;
+    this.Age=Age;
+    this.Education=Education;
+
+  }
+
+}
+                                                    Answer #8
+
+
+
+void main()                
+{
+
+var human=Humans();
+human.legs=(2);
+human.same_item="Drinks Water";
+human.speak();
+
+var dog=Dog();
+dog.same_item="Drinks Water";
+dog.legs=(4);
+dog.bark();
+}
+
+
+class LivingCreatures{
+
+  late String same_item;
+
+  void eat(){
+
+    print("eats food to live alive");
+  }
+}
+
+class Humans extends LivingCreatures {
+
+  late int legs;
+
+
+  void speak(){
+    print("Human speaks");
+  }
+
+}
+
+class Dog extends LivingCreatures{
+  late int legs;
+
+
+  void bark(){
+    print("Dogs Bark");
+  }
+}
